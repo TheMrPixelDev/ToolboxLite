@@ -23,7 +23,7 @@ def download_mp3():
     if youtubelink != None and youtubelink != " " and youtubelink != "":
         print(f"Starting download of '{youtubelink}'...Please wait...")
         try:
-            os.system(f'youtube-dl.exe -x --audio-format mp3 --prefer-ffmpeg \"{youtubelink}\"')
+            os.system(f'youtube-dl -x --audio-format mp3 --prefer-ffmpeg \"{youtubelink}\"')
         except Exception as e:
             print("An error occured: " + e)
     else:
